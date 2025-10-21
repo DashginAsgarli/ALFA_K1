@@ -1,10 +1,70 @@
-@font-face {
-    font-family: "Roboto", sans-serif;
-    src: url(./Font/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+ /* font-family: "Roboto Slab", serif; */
 *{
     font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
+}
+.main-everything{
+    padding-top: 173px;
+    padding-left: 120px;
+}
+.main-text{
+    display: flex;
+}
+.main h2{
+     font-family: "Roboto Slab", serif;
+     font-size: 55px;
+     font-weight: bold;
+
+}
+.main-text p{
+    margin-top: 50px;
+    font-size: 24px;
+    width: 662px;
+    margin-right: 190px;
+}
+.main-image1{
+    margin-top: 125px;
+}
+.main-mix{
+    display: flex;
+    margin-top: 94px;
+}
+.main-image2{
+    margin-right: 132px;
+}
+.main-only{
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+}
+.main-same p{
+    font-size: 18px;
+    margin-right: 95px;
+    width: 150px;
+}
+.main-format{
+    margin-top: 162px;
+    margin-bottom: 214px;
+}
+.main-block{
+    margin-top: 131px;
+    display: flex;
+    font-size: 25px;
+}
+.main-format p{
+    font-size: 18px;
+    margin-right: 120px;
+    width: 271px;
+}
+.main-all ul{
+    margin-top: 63px ;
+    font-size: 24px;
+    width: 662px;
+}
+.main-block h4{
+    color: #1e4681;
+    margin-bottom: 15px;
 }
