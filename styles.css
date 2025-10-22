@@ -8,28 +8,60 @@
     box-sizing: border-box;
 }
 
-/* Dashqin 1ci hisse*/
+/*==========Dashqin 1ci hisse============*/
 .header {
     margin: 0 auto;
     box-sizing: border-box;
-    /* padding: 0; */
+}
 
+.header-flex {
+    display: flex;
+}
 
+.header-container {
+    width: 100%;
+    max-width: 2100px;
+    padding-left: 121px;
+    padding-top: 21px;
+
+}
+
+.header-logo {
+    width: 112px;
+    height: 66px;
 }
 
 .header-nav {
     display: flex;
     align-items: baseline;
+    margin-top: 97px;
+    margin-bottom: 43px;
+    font-size: 20px;
+}
+
+.header-nav p {
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+.header-nav img {
+    width: 22px;
+    height: 21px;
 }
 
 h1 {
     font-weight: bold;
     font-family: "Roboto Slab", serif;
+    font-size: 80px;
+    width: 664px;
 }
 
 .header-men {
-    width: 56vw;
+    width: 305px;
+    height: 376px;
     height: auto;
+    margin-left: 118px;
+
 }
 
 .header-blue {
@@ -37,21 +69,128 @@ h1 {
     background-color: #1E4681;
     box-sizing: border-box;
     color: white;
+    width: 433px;
+    height: 200px;
+    padding: 19px 26px 8px;
+    margin-left: 235px;
+    margin-top: 67px;
+    font-size: 25px;
+    border-radius: 5px;
 }
 
 .header-p2 {
     font-family: "Roboto", sans-serif;
     display: flex;
     justify-content: flex-end;
+    font-size: 20px;
+    margin-top: 8px;
 }
+
+.header-flex1 {
+    font-size: 20px;
+    margin-top: 20px;
+    width: 414px;
+}
+
+/*========Dashqin 2ci hisse=============*/
+
+.article-container {
+    margin: auto;
+    padding: 238px 80px 121px;
+    box-sizing: border-box;
+}
+
+.article-container h2 {
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 139px;
+    font-family: "Roboto Slab", serif;
+
+}
+
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.article-card {
+    margin: auto;
+    box-sizing: border-box;
+    border-radius: 30px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.article-card:hover {
+    transform: scale(1.05);
+}
+
+.article-card:nth-child(1):hover {
+    box-shadow: 4px 8px 12px rgba(206, 162, 17, 0.63);
+}
+
+.article-card:nth-child(2):hover {
+    box-shadow: 4px 8px 12px rgba(6, 118, 223, 0.534);
+}
+
+.article-card:nth-child(3):hover {
+    box-shadow: 4px 8px 12px rgba(255, 0, 0, 0.35);
+}
+
+.article-card:nth-child(4):hover {
+    box-shadow: 4px 8px 12px rgba(7, 165, 170, 0.35);
+}
+
+.article-card:nth-child(5):hover {
+    box-shadow: 4px 8px 12px rgba(121, 76, 39, 0.479);
+}
+
+.article-card:nth-child(6):hover {
+    box-shadow: 4px 8px 12px rgba(10, 37, 155, 0.452);
+}
+
+.article-card:nth-child(7):hover {
+    box-shadow: 4px 8px 12px rgba(76, 101, 146, 0.616);
+}
+
+.article-card:nth-child(8):hover {
+    box-shadow: 4px 8px 12px rgba(11, 172, 59, 0.664);
+}
+
+.article h4 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.article-h4se {
+    margin-bottom: 30px;
+}
+
+.article-card p {
+    font-size: 24px;
+}
+
+.article-text {
+    padding: 20px;
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+/* =====Mobil====(300px-600px)====== */
 
 @media screen and (min-width: 300px) and (max-width: 600px) {
 
-    /* Dashqin mobil - 1 */
+    /* Dashqin mobil 1-ci hisse */
     .header-container {
         width: 100%;
         max-width: 600px;
-        margin: auto;
+        margin: 0 auto;
         padding-left: 36px;
         padding-top: 35px;
     }
@@ -111,12 +250,46 @@ h1 {
         margin-top: 6px;
     }
 
+    /* Dashqin 2-ci hisse mobil */
+
+    .article-container {
+        margin: 0 auto;
+        padding: 61px 95px 47px;
+    }
+
+    .article-container h2 {
+        font-size: 26px;
+        margin-bottom: 57px;
+    }
+    .article-card{
+        height: 310px;
+    }
+
+    .article-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .article h4 {
+        font-size: 21px;
+    }
+
+    .article-h4se {
+        margin-bottom: 25px;
+    }
+
+    .article-card p {
+        font-size: 17px;
+    }
+
+    /* ============================================== */
+
 }
 
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
 
-    /* Dashqin tablet - 1 */
+    /* Dashqin tablet - 1-ci hisse */
     .header-container {
         width: 100%;
         max-width: 1024px;
@@ -183,131 +356,61 @@ h1 {
         margin-top: 8px;
     }
 
-}
+    /* Dashqin 2-ci hisse tablet */
 
-@media screen and (min-width: 1024px) and (max-width: 2100px) {
-
-
-    /* Dashqin desktop - 1 */
-    .header-container {
-        width: 100%;
-        max-width: 2100px;
-        padding-left: 121px;
-        padding-top: 21px;
-
+    .article-container {
+        padding: 128px 49px 53px;
     }
 
-    .header-logo {
-        width: 112px;
-        height: 66px;
+    .article-container h2 {
+        font-size: 32px;
+        margin-bottom: 79px;
     }
 
-    .header-nav {
-        margin-top: 97px;
-        margin-bottom: 43px;
-        font-size: 20px;
+    .article-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 
-    .header-nav p {
-        margin-left: 5px;
-        margin-right: 20px;
+    .article h4 {
+        font-size: 27px;
     }
 
-    .header-nav img {
-        width: 22px;
-        height: 21px;
+    .article-h4se {
+        margin-bottom: 19px;
     }
 
-    .header-flex {
-        display: flex;
+    .article-card p {
+        font-size: 24px;
     }
 
-    h1 {
-        font-size: 80px;
-        width: 664px;
-
-    }
-
-    .header-flex1 {
-        font-size: 20px;
-        margin-top: 20px;
-        width: 414px;
-    }
-
-    .header-men {
-        margin-left: 118px;
-        width: 305px;
-        height: 376px;
-    }
-
-    .header-blue {
-        width: 433px;
-        height: 200px;
-        padding: 19px 26px 8px;
-        margin-left: 235px;
-        margin-top: 67px;
-        font-size: 25px;
-        border-radius: 5px;
-
-    }
-
-    .header-p2 {
-        font-size: 20px;
-        margin-top: 8px;
+    .article-text {
+        padding: 30px;
+        padding-top: 20px;
     }
 
 }
 
 
 
-/* Dashqin 2ci hisse */
 
-.article-container {
-    width: 70vw;
-    margin: auto;
-    /* padding: 238px 80px 121px; */
-    box-sizing: border-box;
+
+
+
+/* Nilufer */
+.main-everything {
+    padding-top: 173px;
+    padding-left: 120px;
 }
 
-.article-container h2 {
+.main-text {
+    display: flex;
+}
+
+.main h2 {
+    font-family: "Roboto Slab", serif;
     font-size: 55px;
     font-weight: bold;
-    margin-bottom: 139px;
-    font-family: "Roboto Slab", serif;
-
-}
-
-.article-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.article-card {
-    margin: auto;
-    box-sizing: border-box;
-    border-radius: 30px;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.article-card:hover {
-    transform: scale(1.05);
-    box-shadow: 1px 4px 12px rgba(255, 0, 0, 0.35);
-}
-
-.article h4 {
-    font-weight: bold;
-    font-size: 30px;
-}
-
-.article-h4se {
-    margin-bottom: 30px;
-}
-
-.article-card p {
-    font-size: 24px;
-}
 
 .article-text {
     padding: 20px;
@@ -729,58 +832,63 @@ h1 {
 .main-text{
     display: flex;
 }
-.main h2{
-     font-family: "Roboto Slab", serif;
-     font-size: 55px;
-     font-weight: bold;
 
-}
-.main-text p{
+.main-text p {
     margin-top: 50px;
     font-size: 24px;
     width: 662px;
     margin-right: 190px;
 }
-.main-image1{
+
+.main-image1 {
     margin-top: 125px;
 }
-.main-mix{
+
+.main-mix {
     display: flex;
     margin-top: 94px;
 }
-.main-image2{
+
+.main-image2 {
     margin-right: 132px;
 }
-.main-only{
+
+.main-only {
     display: flex;
     font-size: 25px;
     align-items: center;
 }
-.main-same p{
+
+.main-same p {
     font-size: 18px;
     margin-right: 95px;
     width: 150px;
 }
-.main-format{
+
+.main-format {
     margin-top: 162px;
     margin-bottom: 214px;
 }
-.main-block{
+
+.main-block {
     margin-top: 131px;
     display: flex;
     font-size: 25px;
 }
-.main-format p{
+
+.main-format p {
     font-size: 18px;
     margin-right: 120px;
     width: 271px;
 }
-.main-all ul{
-    margin-top: 63px ;
+
+.main-all ul {
+    margin-top: 63px;
     font-size: 24px;
     width: 662px;
 }
-.main-block h4{
+
+.main-block h4 {
     color: #1e4681;
     margin-bottom: 15px;
 }
