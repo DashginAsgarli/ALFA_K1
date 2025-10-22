@@ -1,10 +1,313 @@
-@font-face {
-    font-family: "Roboto", sans-serif;
-    src: url(./Font/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=BBH+Sans+Hegarty&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Georgian:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Dashqin 1ci hisse*/
+.header {
+    margin: 0 auto;
+    box-sizing: border-box;
+
+
+}
+
+.header-nav {
+    display: flex;
+    align-items: baseline;
+}
+
+h1 {
+    font-weight: bold;
+    font-family: "Roboto Slab", serif;
+}
+
+.header-men {
+    width: 56vw;
+    height: auto;
+}
+
+.header-blue {
+    font-family: "Roboto Slab", serif;
+    background-color: #1E4681;
+    box-sizing: border-box;
+    color: white;
+}
+
+.header-p2 {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+
+    /* Dashqin mobil - 1 */
+    .header-container {
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+        padding-left: 36px;
+        padding-top: 35px;
+    }
+
+    .header-logo {
+        width: 52px;
+        height: 30px;
+    }
+
+    .header-nav {
+        margin-top: 45px;
+        margin-bottom: 12px;
+        font-size: 10px;
+    }
+
+    .header-nav p {
+        margin-left: 4px;
+        margin-right: 15px;
+    }
+
+    .header-nav img {
+        width: 10px;
+        height: 10px;
+    }
+
+    h1 {
+        font-size: 37px;
+        width: 300px;
+
+    }
+
+    .header-flex1 {
+        font-size: 10px;
+        margin-top: 20px;
+        width: 212px;
+    }
+
+    .header-men {
+        margin-left: 201px;
+        width: 142px;
+        height: 175px;
+    }
+
+    .header-blue {
+        width: 226px;
+        height: 85px;
+        padding: 9px 13px 2px;
+        margin-left: 38px;
+        margin-top: 39px;
+        font-size: 11px;
+        border-radius: 3px;
+
+    }
+
+    .header-p2 {
+        font-size: 10px;
+        margin-top: 6px;
+    }
+
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
+    /* Dashqin tablet - 1 */
+    .header-container {
+        width: 100%;
+        max-width: 1024px;
+        padding-left: 70px;
+        padding-top: 22px;
+    }
+
+    .header-logo {
+        width: 65px;
+        height: 38px;
+    }
+
+    .header-nav {
+        margin-top: 53px;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+
+    .header-nav p {
+        margin-left: 5px;
+        margin-right: 20px;
+    }
+
+    .header-nav img {
+        width: 12px;
+        height: 12px;
+    }
+
+    .header-flex {
+        display: flex;
+    }
+
+    h1 {
+        font-size: 46px;
+        width: 364px;
+
+    }
+
+    .header-flex1 {
+        font-size: 12px;
+        margin-top: 10px;
+        width: 264px;
+    }
+
+    .header-men {
+        margin-left: 118px;
+        width: 176px;
+        height: 206px;
+    }
+
+    .header-blue {
+        width: 280px;
+        height: 116px;
+        padding: 11px 15px 5px;
+        margin-left: 235px;
+        margin-top: 39px;
+        font-size: 14px;
+        border-radius: 3px;
+
+    }
+
+    .header-p2 {
+        font-size: 12px;
+        margin-top: 8px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 2100px) {
+
+
+    /* Dashqin desktop - 1 */
+    .header-container {
+        width: 100%;
+        max-width: 2100px;
+        padding-left: 121px;
+        padding-top: 21px;
+
+    }
+
+    .header-logo {
+        width: 112px;
+        height: 66px;
+    }
+
+    .header-nav {
+        margin-top: 97px;
+        margin-bottom: 43px;
+        font-size: 20px;
+    }
+
+    .header-nav p {
+        margin-left: 5px;
+        margin-right: 20px;
+    }
+
+    .header-nav img {
+        width: 22px;
+        height: 21px;
+    }
+
+    .header-flex {
+        display: flex;
+    }
+
+    h1 {
+        font-size: 80px;
+        width: 664px;
+
+    }
+
+    .header-flex1 {
+        font-size: 20px;
+        margin-top: 20px;
+        width: 414px;
+    }
+
+    .header-men {
+        margin-left: 118px;
+        width: 305px;
+        height: 376px;
+    }
+
+    .header-blue {
+        width: 433px;
+        height: 200px;
+        padding: 19px 26px 8px;
+        margin-left: 235px;
+        margin-top: 67px;
+        font-size: 25px;
+        border-radius: 5px;
+
+    }
+
+    .header-p2 {
+        font-size: 20px;
+        margin-top: 8px;
+    }
+
+}
+
+
+
+/* Dashqin 2ci hisse */
+
+.article-container {
+    width: 70vw;
+    margin: auto;
+    /* padding: 238px 80px 121px; */
+    box-sizing: border-box;
+}
+
+.article-container h2 {
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 139px;
+    font-family: "Roboto Slab", serif;
+
+}
+
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.article-card {
+    margin: auto;
+    box-sizing: border-box;
+    border-radius: 30px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.article-card:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 4px 12px rgba(255, 0, 0, 0.35);
+}
+
+.article h4 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.article-h4se {
+    margin-bottom: 30px;
+}
+
+.article-card p {
+    font-size: 24px;
+}
+
+.article-text {
+    padding: 20px;
+    padding-top: 10px;
 }
