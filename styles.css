@@ -1,11 +1,830 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
- /* font-family: "Roboto Slab", serif; */
-*{
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=BBH+Sans+Hegarty&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Georgian:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
     font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
+/*==========Dashqin 1ci hisse============*/
+.header {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.header-flex {
+    display: flex;
+}
+
+.header-container {
+    width: 100%;
+    max-width: 2100px;
+    padding-left: 121px;
+    padding-top: 21px;
+
+}
+
+.header-logo {
+    width: 112px;
+    height: 66px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: baseline;
+    margin-top: 97px;
+    margin-bottom: 43px;
+    font-size: 20px;
+}
+
+.header-nav p {
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+.header-nav img {
+    width: 22px;
+    height: 21px;
+}
+
+h1 {
+    font-weight: bold;
+    font-family: "Roboto Slab", serif;
+    font-size: 80px;
+    width: 664px;
+}
+
+.header-men {
+    width: 305px;
+    height: 376px;
+    height: auto;
+    margin-left: 118px;
+
+}
+
+.header-blue {
+    font-family: "Roboto Slab", serif;
+    background-color: #1E4681;
+    box-sizing: border-box;
+    color: white;
+    width: 433px;
+    height: 200px;
+    padding: 19px 26px 8px;
+    margin-left: 235px;
+    margin-top: 67px;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.header-p2 {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+.header-flex1 {
+    font-size: 20px;
+    margin-top: 20px;
+    width: 414px;
+}
+
+/*========Dashqin 2ci hisse=============*/
+
+.article-container {
+    margin: auto;
+    padding: 238px 80px 121px;
+    box-sizing: border-box;
+}
+
+.article-container h2 {
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 139px;
+    font-family: "Roboto Slab", serif;
+
+}
+
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.article-card {
+    margin: auto;
+    box-sizing: border-box;
+    border-radius: 30px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.article-card:hover {
+    transform: scale(1.05);
+}
+
+.article-card:nth-child(1):hover {
+    box-shadow: 4px 8px 12px rgba(206, 162, 17, 0.63);
+}
+
+.article-card:nth-child(2):hover {
+    box-shadow: 4px 8px 12px rgba(6, 118, 223, 0.534);
+}
+
+.article-card:nth-child(3):hover {
+    box-shadow: 4px 8px 12px rgba(255, 0, 0, 0.35);
+}
+
+.article-card:nth-child(4):hover {
+    box-shadow: 4px 8px 12px rgba(7, 165, 170, 0.35);
+}
+
+.article-card:nth-child(5):hover {
+    box-shadow: 4px 8px 12px rgba(121, 76, 39, 0.479);
+}
+
+.article-card:nth-child(6):hover {
+    box-shadow: 4px 8px 12px rgba(10, 37, 155, 0.452);
+}
+
+.article-card:nth-child(7):hover {
+    box-shadow: 4px 8px 12px rgba(76, 101, 146, 0.616);
+}
+
+.article-card:nth-child(8):hover {
+    box-shadow: 4px 8px 12px rgba(11, 172, 59, 0.664);
+}
+
+.article h4 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.article-h4se {
+    margin-bottom: 30px;
+}
+
+.article-card p {
+    font-size: 24px;
+}
+
+.article-text {
+    padding: 20px;
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+/* =====Mobil====(300px-600px)====== */
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+
+    /* Dashqin mobil 1-ci hisse */
+    .header-container {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        padding-left: 36px;
+        padding-top: 35px;
+    }
+
+    .header-logo {
+        width: 52px;
+        height: 30px;
+    }
+
+    .header-nav {
+        margin-top: 45px;
+        margin-bottom: 12px;
+        font-size: 10px;
+    }
+
+    .header-nav p {
+        margin-left: 4px;
+        margin-right: 15px;
+    }
+
+    .header-nav img {
+        width: 10px;
+        height: 10px;
+    }
+
+    h1 {
+        font-size: 37px;
+        width: 300px;
+
+    }
+
+    .header-flex1 {
+        font-size: 10px;
+        margin-top: 20px;
+        width: 212px;
+    }
+
+    .header-men {
+        margin-left: 201px;
+        width: 142px;
+        height: 175px;
+    }
+
+    .header-blue {
+        width: 226px;
+        height: 85px;
+        padding: 9px 13px 2px;
+        margin-left: 38px;
+        margin-top: 39px;
+        font-size: 11px;
+        border-radius: 3px;
+
+    }
+
+    .header-p2 {
+        font-size: 10px;
+        margin-top: 6px;
+    }
+
+    /* Dashqin 2-ci hisse mobil */
+
+    .article-container {
+        margin: 0 auto;
+        padding: 61px 95px 47px;
+    }
+
+    .article-container h2 {
+        font-size: 26px;
+        margin-bottom: 57px;
+    }
+    .article-card{
+        height: 310px;
+    }
+
+    .article-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .article h4 {
+        font-size: 21px;
+    }
+
+    .article-h4se {
+        margin-bottom: 25px;
+    }
+
+    .article-card p {
+        font-size: 17px;
+    }
+
+    /* ============================================== */
+
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
+    /* Dashqin tablet - 1-ci hisse */
+    .header-container {
+        width: 100%;
+        max-width: 1024px;
+        padding-left: 70px;
+        padding-top: 22px;
+    }
+
+    .header-logo {
+        width: 65px;
+        height: 38px;
+    }
+
+    .header-nav {
+        margin-top: 53px;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+
+    .header-nav p {
+        margin-left: 5px;
+        margin-right: 20px;
+    }
+
+    .header-nav img {
+        width: 12px;
+        height: 12px;
+    }
+
+    .header-flex {
+        display: flex;
+    }
+
+    h1 {
+        font-size: 46px;
+        width: 364px;
+
+    }
+
+    .header-flex1 {
+        font-size: 12px;
+        margin-top: 10px;
+        width: 264px;
+    }
+
+    .header-men {
+        margin-left: 118px;
+        width: 176px;
+        height: 206px;
+    }
+
+    .header-blue {
+        width: 280px;
+        height: 116px;
+        padding: 11px 15px 5px;
+        margin-left: 235px;
+        margin-top: 39px;
+        font-size: 14px;
+        border-radius: 3px;
+
+    }
+
+    .header-p2 {
+        font-size: 12px;
+        margin-top: 8px;
+    }
+
+    /* Dashqin 2-ci hisse tablet */
+
+    .article-container {
+        padding: 128px 49px 53px;
+    }
+
+    .article-container h2 {
+        font-size: 32px;
+        margin-bottom: 79px;
+    }
+
+    .article-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .article h4 {
+        font-size: 27px;
+    }
+
+    .article-h4se {
+        margin-bottom: 19px;
+    }
+
+    .article-card p {
+        font-size: 24px;
+    }
+
+    .article-text {
+        padding: 30px;
+        padding-top: 20px;
+    }
+
+}
+
+
+
+
+
+
+
+/* Nilufer */
+.main-everything {
+    padding-top: 173px;
+    padding-left: 120px;
+}
+
+.main-text {
+    display: flex;
+}
+
+.main h2 {
+    font-family: "Roboto Slab", serif;
+    font-size: 55px;
+    font-weight: bold;
+
+.article-text {
+    padding: 20px;
+    padding-top: 10px;
+}
+
+/* Senuber */
+.footer {
+    margin:auto;
+}
+.footer-left{
+    padding: 91px 0 105px 125px;
+    background-color: #EFEFEF;
+    width:100vw;
+    
+}
+.footer-text{
+    color:black;
+    font-size: 55px;
+    margin-bottom: 62px;
+    box-sizing:border-box;
+}
+
+.footer-layer {
+    background-color: rgb(255, 255, 255);
+    border-radius:30px ;
+    padding:45px;
+    width: 46vw;
+    height: 50vh;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease;
+
+}
+.footer-layer p {
+    font-size:20px;
+    margin-bottom: 40px;
+    margin-left:20px;
+    box-sizing:border-box;
+ 
+}
+.footer-image p{
+    font-size:30px;
+    font-weight: bold;
+    margin-top: 42px;
+    margin-bottom:27px;
+    margin-left:20px;
+    box-sizing:border-box;
+}
+.footer-image img{
+    margin-left:20px;
+}
+.footer-image{
+    margin-left: 20px;
+}
+.footer-author {
+    display:flex; 
+}
+.footer-woman{
+    width:194px;
+}
+.footer-layer:hover{
+    transform: scale(1.05);
+    background-color: #9DC9C8;
+}
+
+/* 2. hisse */
+.footer-right{
+    padding:179px 0 185px 122px;
+    width:100vw;
+    background-color: #9DC9C8;
+}
+.footer-same{
+    font-size:55px;
+    /* box-sizing:border-box; */
+}
+.footer-top{
+    font-size:25px;
+    margin-top: 52px;
+    /* box-sizing:border-box; */
+}
+.footer-price{
+    font-size:80px;
+    margin-bottom: 87px;
+    /* box-sizing:border-box; */
+}
+.footer-second {
+    display:flex;
+    width:50vw;
+}
+ .footer-zero{
+    font-size:25px; 
+    margin:9px 70px 0 0;
+    /* box-sizing:border-box; */
+ }
+ .footer-end p{
+    margin:9px 70px 0 0;
+ }
+
+
+ /* 3. hisse */
+.footer-last{
+    background-color: black;
+    color:white;
+    /* box-sizing:border-box; */
+    width:100vw;
+}
+.footer-mobile{
+    display:flex;
+}
+.footer-phone{
+    margin:50px 0 0 122px;
+}
+.footer-socials{
+    /* gap:20px; */
+    margin-top:30px;
+}
+.footer-one{
+    display:flex;
+    margin: 59px 0px 0 739px;
+    /* box-sizing:border-box; */
+}
+.footer-one p{
+    margin-left: 18px;
+    /* box-sizing:border-box; */
+
+}
+.footer-two{
+    display:flex;
+    margin: 25px 0px 0 739px;
+    /* box-sizing:border-box; */
+}
+.footer-two p{
+    margin-left: 18px; 
+    /* box-sizing:border-box;  */
+}
+.footer-date{
+    display:flex;
+    margin-top:146px;
+    margin-left:122px;
+    /* box-sizing:border-box; */
+}
+
+/* TABLET */
+@media(min-width:601px) and (max-width:1024px){
+    .footer {
+    margin:auto;
+}
+.footer-left{
+    padding: 71px 0 85px 105px;
+    background-color: #EFEFEF;
+    width:100vw;
+    
+}
+.footer-text{
+    color:black;
+    font-size: 32px;
+    margin-bottom: 19.69px;
+    box-sizing:border-box;
+}
+
+.footer-layer {
+    background-color: rgb(255, 255, 255);
+    border-radius:17.38px ;
+    padding:25px;
+    width: 26vw;
+    height: 30vh;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease;
+
+}
+.footer-layer p {
+    font-size:12px;
+    margin-bottom: 5.79px;
+    margin-left:20px;
+    box-sizing:border-box;
+ 
+}
+.footer-image p{
+    font-size:17px;
+    font-weight: bold;
+    margin-top: 28.96px;
+    margin-bottom:27px;
+    margin-left:17px;
+    box-sizing:border-box;
+}
+.footer-image img{
+    margin-left:15.06px;
+}
+.footer-image{
+    margin-left: 17.38px;
+}
+.footer-author {
+    display:flex; 
+}
+.footer-woman{
+    width:110px;
+}
+.footer-layer:hover{
+    transform: scale(1.05);
+    background-color: #9DC9C8;
+}
+
+/* 2. hisse */
+.footer-right{
+    padding: 71px 0 85px 105px;
+    width:100vw;
+    background-color: #9DC9C8;
+}
+.footer-same{
+    font-size:32px;
+    box-sizing:border-box;
+}
+.footer-top{
+    font-size:14px;
+    margin-top: 31.27px;
+    box-sizing:border-box;
+}
+.footer-price{
+    font-size:46px;
+    margin-bottom: 50.07px;
+    box-sizing:border-box;
+}
+.footer-second {
+    display:flex;
+    width:30vw;
+}
+ .footer-zero{
+    font-size:14px; 
+    margin:9px 40px 0 0;
+    box-sizing:border-box;
+ }
+ .footer-end p{
+    margin:9px 40px 0 0;
+ }
+
+
+ /* 3. hisse */
+.footer-last{
+    background-color: black;
+    color:white;
+    box-sizing:border-box;
+    width:100vw;
+    padding: 71px 0 85px 105px;
+}
+.footer-mobile{
+    display:flex;
+}
+.footer-phone{
+    margin:29px 0 0 71px;
+}
+.footer-socials{
+    gap:11px;
+    margin-top:18px;
+}
+.footer-one{
+    display:flex;
+    margin: 31px 0px 0 428px;
+    box-sizing:border-box;
+}
+.footer-one p{
+    margin-left: 12px;
+    box-sizing:border-box;
+
+}
+.footer-two{
+    display:flex;
+    margin: 31px 0px 0 428px;
+    box-sizing:border-box;
+}
+.footer-two p{
+    margin-left: 12px; 
+    box-sizing:border-box; 
+}
+.footer-date{
+    display:flex;
+    margin-top:85px;
+    margin-left:70px;
+    box-sizing:border-box;
+}
+
+}
+
+/* MOBİLE */
+
+@media(min-width:300px) and (max-width:600px){
+    .footer {
+    margin:auto;
+}
+.footer-left{
+    padding: 71px 0 85px 105px;
+    background-color: #EFEFEF;
+    width:100vw;
+    
+}
+.footer-text{
+    color:black;
+    font-size: 26px;
+    margin-bottom: 11px;
+    box-sizing:border-box;
+}
+
+.footer-layer {
+    background-color: rgb(255, 255, 255);
+    border-radius:17px ;
+    padding:15px;
+    width: 16vw;
+    height: 20vh;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease;
+
+}
+.footer-layer p {
+    font-size:10px;
+    margin-bottom: 17px;
+    margin-left:21px;
+    box-sizing:border-box;
+ 
+}
+.footer-image p{
+    font-size:14px;
+    font-weight: bold;
+    margin-top: 33.54px;
+    margin-bottom:46.74px;
+    margin-left:13.63px;
+    box-sizing:border-box;
+}
+.footer-image img{
+    margin-left:29px;
+}
+.footer-image{
+    margin-left: 13px;
+}
+.footer-author {
+    display:flex; 
+}
+.footer-woman{
+    width:80px;
+}
+.footer-layer:hover{
+    transform: scale(1.05);
+    background-color: #9DC9C8;
+}
+
+/* 2. hisse */
+.footer-right{
+    padding: 71px 0 85px 105px;
+    width:100vw;
+    background-color: #9DC9C8;
+}
+.footer-same{
+    font-size:26px;
+    box-sizing:border-box;
+}
+.footer-top{
+    font-size:12px;
+    margin-top: 22.33px;
+    box-sizing:border-box;
+}
+.footer-price{
+    font-size:37px;
+    margin-bottom: 39.53px;
+    box-sizing:border-box;
+}
+.footer-second {
+    display:flex;
+    width:10vw;
+}
+ .footer-zero{
+    font-size:10px; 
+    margin:9px 40px 0 0;
+    box-sizing:border-box;
+ }
+ .footer-end p{
+    margin:9px 31px 0 0;
+ }
+
+
+ /* 3. hisse */
+.footer-last{
+    background-color: black;
+    color:white;
+    box-sizing:border-box;
+    width:100vw;
+    padding: 71px 20px 75px 95px;
+}
+.footer-mobile{
+    display:flex;
+}
+.footer-phone{
+    margin:23px 0 0 56px;
+}
+.footer-socials{
+    gap:8px;
+    margin-top:14px;
+}
+.footer-contact{
+    margin:0 0 49px 38px;
+    box-sizing:border-box;
+}
+.footer-date{
+    display:flex;
+    margin-top:49px;
+    margin-left:57px;
+    box-sizing:border-box;
+}
+
+}
+
+
+
+
+
+
+
 .main-everything{
     padding-top: 173px;
     padding-left: 120px;
@@ -13,58 +832,63 @@
 .main-text{
     display: flex;
 }
-.main h2{
-     font-family: "Roboto Slab", serif;
-     font-size: 55px;
-     font-weight: bold;
 
-}
-.main-text p{
+.main-text p {
     margin-top: 50px;
     font-size: 24px;
     width: 662px;
     margin-right: 190px;
 }
-.main-image1{
+
+.main-image1 {
     margin-top: 125px;
 }
-.main-mix{
+
+.main-mix {
     display: flex;
     margin-top: 94px;
 }
-.main-image2{
+
+.main-image2 {
     margin-right: 132px;
 }
-.main-only{
+
+.main-only {
     display: flex;
     font-size: 25px;
     align-items: center;
 }
-.main-same p{
+
+.main-same p {
     font-size: 18px;
     margin-right: 95px;
     width: 150px;
 }
-.main-format{
+
+.main-format {
     margin-top: 162px;
     margin-bottom: 214px;
 }
-.main-block{
+
+.main-block {
     margin-top: 131px;
     display: flex;
     font-size: 25px;
 }
-.main-format p{
+
+.main-format p {
     font-size: 18px;
     margin-right: 120px;
     width: 271px;
 }
-.main-all ul{
-    margin-top: 63px ;
+
+.main-all ul {
+    margin-top: 63px;
     font-size: 24px;
     width: 662px;
 }
-.main-block h4{
+
+.main-block h4 {
     color: #1e4681;
     margin-bottom: 16px;
 }
